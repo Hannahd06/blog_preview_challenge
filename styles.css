@@ -1,0 +1,64 @@
+ /*Adding links to allow us to use custom fonts*/
+ @font-face {
+    font-family: 'CustomFont';
+    src: url('assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+ /* Background color and setting custom font for entire page. */
+html {
+    background-color: hsl(47, 88%, 63%);  
+    padding: 10px; 
+    font-family: 'CustomFont', sans-serif;
+}
+
+ /*Centering Card on page*/
+.container {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+ /* Setting width, background color, and borders for card*/
+}
+.card {
+    max-width: 350px;
+    flex-wrap: wrap;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 15px; 
+    border: black solid 2px;
+    box-shadow: 5px 5px;
+
+}
+
+ /* Using font weight to set bold items */
+h2, span { 
+    font-weight: 800;
+}
+
+.date {
+    font-size: 12px;
+}
+
+ /*Styling for button*/
+button {
+    margin-top: 10px;
+    background-color: hsl(47, 88%, 63%);  
+    border-radius:5px;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 900;
+}
+
+/*Double spacing the description*/
+#details {
+    line-height: 2;
+    font-size: 16px;
+}
+ /*Aligning author's photo icon to his name*/
+.author img {
+    vertical-align: middle;
+    width: 40px;
+}
